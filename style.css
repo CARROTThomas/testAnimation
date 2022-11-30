@@ -1,0 +1,66 @@
+/*################################*/
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Outline&family=Holtwood+One+SC&display=swap');/*################################*/
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Outline&display=swap');
+/*################################*/
+
+:root {
+    --background: #0B111E;
+    --white: #fff;
+    --black: #000;
+}
+
+*
+{
+    margin: 0%;
+    padding: 0%;
+}
+
+body
+{
+    background-color: var(--background);
+    height: 500vh;
+}
+
+header
+{
+    position: fixed;
+    width: 100%;
+}
+
+.presentation
+{
+    background-color: var(--background);
+    height: 100vh;
+}
+
+.homePage
+{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.punchline
+{
+    font-size: 7em;
+    font-family: 'Bungee Outline', cursive;
+    font-family: 'Holtwood One SC', serif;
+    background-image: url("img/vague.gif");
+    background-size: cover;
+    background-position: center;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.textSepa
+{
+    color: red;
+    width: 5000%;
+    position: relative;
+    left: -5000px;
+    font-size: 5em;
+    font-family: 'Bungee Outline', cursive;
+}
