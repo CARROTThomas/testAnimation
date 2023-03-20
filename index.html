@@ -6,58 +6,103 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="dataLocomotive/locomotive-scroll.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="icon" href="https://cdn.discordapp.com/attachments/897928766926487566/973319453943140412/Capture.PNG">
 
 <!--  -->
 
 
 </head>
-<body>
+<body data-scroll-container>
 
-    <header>
-        <nav class="navbar navbar-expand-lg">
-            <div class="container d-flex align-items-center justify-content-between">
-                <a id="logo" class="navbar-brand text-light" href="#">LOGO</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-end text-light" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link text-light" href="#">lien</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-light" href="#">lien</a>
-                        </li>
-                        <li>
-                            <a class="nav-link text-warning" href="#">lien</a>
-                        </li>
-                        <li>
-                            <a class="nav-link text-danger" href="#">lien</a>
-                        </li>
-                    </ul>
-                </div>
+<header>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container d-flex align-items-center justify-content-between">
+            <a id="logo" class="navbar-brand text-light" href="#">LOGO</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end text-light" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">lien</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">lien</a>
+                    </li>
+                    <li>
+                        <a class="nav-link text-warning" href="#">lien</a>
+                    </li>
+                    <li>
+                        <a class="nav-link text-danger" href="#">lien</a>
+                    </li>
+                </ul>
             </div>
-        </nav>
-    </header> <!-- BAR DE NAVIGATION-->
-
-    <div class="presentation">
-        <div class="container homePage">
-            <h1 class="punchline">Portfolio</h1>
         </div>
-    </div>
+    </nav>
+</header> <!-- BAR DE NAVIGATION-->
 
-    <div class="text-row row1">
-        <h1 id="textDeroulantLeft" class="p-0 m-0 textSepa" style="transform: translate3d(-1074.41px, 0px, 0px);">SEPA SEPA SEPA SEPA SEPA SEPA SEPA SEPA SEPA SEPA SEPA SEPA SEPA SEPA SEPA SEPA SEPA SEPA SEPA SEPA SEPA SEPA SEPA SEPA SEPA SEPA SEPA SEPA</h1>
-        <!-- style="transform: translate3d(-498.592px, 0px, 0px);" -->
+<div class="presentation">
+    <div class="container homePage">
+        <h1 class="punchline">Portfolio</h1>
     </div>
+</div>
 
-    <div class="text-row row2">
-        <h1 id="textDeroulantRight" class="p-0 m-0 textSepa" style="transform: translate3d(-498.592px, 0px, 0px);">SEPA SEPA SEPA SEPA SEPA SEPA SEPA SEPA SEPA SEPA SEPA SEPA SEPA SEPA SEPA SEPA SEPA SEPA SEPA SEPA SEPA SEPA SEPA SEPA SEPA SEPA SEPA SEPA</h1>
+<div class="containerDecoDestinationsLeft">
+    <span class="txt">- GRENOBLE - LYON&nbsp;</span>
+    <span class="txt">- GRENOBLE - LYON&nbsp;</span>
+    <span class="txt">- GRENOBLE - LYON&nbsp;</span>
+</div>
+
+<section data-scroll-section class="d-flex justify-content-center align-items-center">
+    <h1 data-scroll data-scroll-direction data-scroll-speed="8" class="titreSection">EFFET LOCOMOTIVE</h1>
+</section>
+
+
+
+
+
+
+
+<div data-scroll-section id="test" class="d-flex justify-content-around align-items-center">
+    <div data-scroll data-scroll-sticky data-scroll-target="#test" class="sectionFixe">
+        <h1><strong>position fixe</strong></h1>
     </div>
+    <div>
+        <div class="d-flex justify-content-center align-items-center carte"><span>test1</span></div>
+        <div class="d-flex justify-content-center align-items-center carte"><span>test2</span></div>
+        <div class="d-flex justify-content-center align-items-center carte"><span>test3</span></div>
+        <div class="d-flex justify-content-center align-items-center carte"><span>test4</span></div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<section data-scroll-section class="d-flex justify-content-around align-items-center ">
+    <h1 class="text-primary fs-1"><strong>TEST</strong></h1>
+</section>
+
+<section data-scroll-section class="d-flex justify-content-around align-items-center">
+    <h1 class="text-success fs-1"><strong>TEST</strong></h1>
+</section>
+
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="dataLocomotive/locomotive-scroll.js"></script>
 <script src="JS/main.js"></script>
+<script>
+    const scroll = new LocomotiveScroll({
+    el: document.querySelector('[data-scroll-container]'),
+    smooth: true
+    });
+</script>
 </body>
 </html>

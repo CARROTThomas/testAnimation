@@ -17,8 +17,6 @@
 
 body
 {
-    background-color: var(--background);
-    height: 500vh;
 }
 
 header
@@ -46,7 +44,7 @@ header
     font-size: 7em;
     font-family: 'Bungee Outline', cursive;
     font-family: 'Holtwood One SC', serif;
-    background-image: url("img/vague.gif");
+    background-image: url("../img/vague.gif");
     background-size: cover;
     background-position: center;
     -webkit-background-clip: text;
@@ -55,12 +53,62 @@ header
     color: transparent;
 }
 
-.textSepa
+.containerDecoDestinationsLeft {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+}
+
+.txt {
+    white-space: nowrap;
+    font-size: 10em;
+    animation: scrollTxtLeft 10s linear infinite;
+}
+
+section {
+    height: 100vh;
+    background-color: white;
+}
+
+.titreSection {
+    color: black;
+    font-size: 8em;
+}
+
+.imgDeco {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 30px solid pink;
+    background-color: #0B111E;
+}
+
+span
 {
-    color: red;
-    width: 5000%;
-    position: relative;
-    left: -5000px;
-    font-size: 5em;
-    font-family: 'Bungee Outline', cursive;
+    font-size: 3em;
+}
+
+.carte {
+    border: 2px solid black;
+    height: 300px;
+    width: 300px;
+    margin: 5em;
+}
+
+#test {
+    background-color: white;
+}
+
+.sectionFixe {
+    height: auto;
+    border: 1px solid black;
+}
+
+@keyframes scrollTxtLeft {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(-100%, 0);
+    }
 }
