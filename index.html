@@ -57,15 +57,26 @@
     <span class="txt">- GRENOBLE - LYON&nbsp;</span>
 </div>
 
-<section data-scroll-section class="d-flex justify-content-center align-items-center">
-    <h1 data-scroll data-scroll-direction data-scroll-speed="8" class="titreSection">EFFET LOCOMOTIVE</h1>
+<section data-scroll-section class="d-flex flex-column justify-content-center align-items-center">
+    <h2 data-scroll data-scroll-repeat class="fs-1 d-flex justify-content-center">
+        <span data-scroll data-scroll-delay="0.15" data-scroll-speed="5">E</span>
+        <span data-scroll data-scroll-delay="0.095" data-scroll-speed="5">F</span>
+        <span data-scroll data-scroll-delay="0.085" data-scroll-speed="5">F</span>
+        <span data-scroll data-scroll-delay="0.075" data-scroll-speed="5">E</span>
+        <span data-scroll data-scroll-delay="0.065" data-scroll-speed="5">T</span>
+        <span data-scroll data-scroll-delay="0.045" data-scroll-speed="5" class="ms-5"> </span>
+        <span data-scroll data-scroll-delay="0.17" data-scroll-speed="5">L</span>
+        <span data-scroll data-scroll-delay="0.16" data-scroll-speed="5">O</span>
+        <span data-scroll data-scroll-delay="0.15" data-scroll-speed="5">C</span>
+        <span data-scroll data-scroll-delay="0.095" data-scroll-speed="5">O</span>
+        <span data-scroll data-scroll-delay="0.085" data-scroll-speed="5">O</span>
+        <span data-scroll data-scroll-delay="0.075" data-scroll-speed="5">T</span>
+        <span data-scroll data-scroll-delay="0.065" data-scroll-speed="5">I</span>
+        <span data-scroll data-scroll-delay="0.045" data-scroll-speed="5">V</span>
+        <span data-scroll data-scroll-delay="0.030" data-scroll-speed="5">E</span>
+    </h2>
+    <h3 data-scroll data-scroll-delay="0.03" data-scroll-speed="5">soooo smooth</h3>
 </section>
-
-
-
-
-
-
 
 <div data-scroll-section style="background-color: #4f4e4e" class="d-flex justify-content-around align-items-center">
     <div data-scroll data-scroll-sticky data-scroll-target="#targetVisuPosition">
@@ -79,21 +90,80 @@
     </div>
 </div>
 
+<div id="gallery" data-scroll-section>
+    <div class="containerImgsAnimation">
+        <div class="imgLeftAnimationImg">
+            <img src="img/demon.jpg" alt="Demon">
+            <img src="img/foret.jpg" alt="forêt">
+            <img src="img/pianoOcean.jpg" alt="piano Océan">
+            <img src="img/foret.jpg" alt="forêt">
+        </div>
+
+        <div class="d-flex">
+            <img src="img/samurai.jpg"
+                 alt=""
+                 class="imgFixe"
+                 data-scroll
+                 data-scroll-sticky
+                 data-scroll-target="#gallery"
+                 data-scroll-speed="1.2">
+            <h1><strong>IMG FIXE</strong></h1>
+        </div>
+    </div>
+</div>
+
+<div id="gallery2" data-scroll-section>
+    <div class="containerImgsAnimation">
+        <div class="d-flex">
+            <img src="img/samurai.jpg"
+                 alt=""
+                 class="imgFixe"
+                 data-scroll
+                 data-scroll-sticky
+                 data-scroll-target="#gallery2"
+                 data-scroll-speed="1.2">
+            <h1><strong>IMG FIXE</strong></h1>
+        </div>
+
+        <div class="imgLeftAnimationDiv">
+            <div class="d-flex justify-content-center align-items-center">
+                <p style="width: 50%" class="text-center text-light fs-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae dolore est mollitia odio ullam voluptas.</p>
+            </div>
+            <div class="d-flex justify-content-center align-items-center">
+                <p style="width: 50%" class="text-center text-light fs-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae dolore est mollitia odio ullam voluptas.</p>
+            </div>
+            <div class="d-flex justify-content-center align-items-center">
+                <p style="width: 50%" class="text-center text-light fs-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae dolore est mollitia odio ullam voluptas.</p>
+            </div>
+            <div class="d-flex justify-content-center align-items-center">
+                <p style="width: 50%" class="text-center text-light fs-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae dolore est mollitia odio ullam voluptas.</p>
+            </div>
+        </div>
+
+    </div>
+</div>
 
 
-<section data-scroll-section class="d-flex justify-content-center align-items-center">
+<section data-scroll-section style="height: auto" class="d-flex flex-column justify-content-center align-items-center">
     <span><strong>footer</strong></span>
+    <div>
+        <ul class="d-flex justify-content-around m-0 p-0">
+            <li><a class="footer-links" href="#"><i class="bi bi-instagram"></i></a></li>
+            <li><a class="footer-links" href="#"><i class="bi bi-linkedin"></i></a></li>
+            <li><a class="footer-links" href="#"><i class="bi bi-facebook"></i></a></li>
+        </ul>
+    </div>
 </section>
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="dataLocomotive/locomotive-scroll.js"></script>
-<script src="JS/main.js"></script>
 <script>
     const scroll = new LocomotiveScroll({
     el: document.querySelector('[data-scroll-container]'),
     smooth: true
     });
 </script>
+<script src="JS/main.js"></script>
 </body>
 </html>
