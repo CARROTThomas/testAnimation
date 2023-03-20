@@ -11,12 +11,10 @@
     <link rel="icon" href="https://cdn.discordapp.com/attachments/897928766926487566/973319453943140412/Capture.PNG">
 
 <!--  -->
-
-
 </head>
 <body data-scroll-container>
 
-<header>
+<header data-scroll-section>
     <nav class="navbar navbar-expand-lg">
         <div class="container d-flex align-items-center justify-content-between">
             <a id="logo" class="navbar-brand text-light" href="#">LOGO</a>
@@ -42,14 +40,18 @@
         </div>
     </nav>
 </header> <!-- BAR DE NAVIGATION-->
-
 <div class="presentation">
     <div class="container homePage">
         <h1 class="punchline">Portfolio</h1>
     </div>
 </div>
 
-<div class="containerDecoDestinationsLeft">
+
+
+
+
+
+<div data-scroll-section class="containerDecoDestinations">
     <span class="txt">- GRENOBLE - LYON&nbsp;</span>
     <span class="txt">- GRENOBLE - LYON&nbsp;</span>
     <span class="txt">- GRENOBLE - LYON&nbsp;</span>
@@ -65,11 +67,11 @@
 
 
 
-<div data-scroll-section id="test" class="d-flex justify-content-around align-items-center">
-    <div data-scroll data-scroll-sticky data-scroll-target="#test" class="sectionFixe">
-        <h1><strong>position fixe</strong></h1>
+<div data-scroll-section style="background-color: #4f4e4e" class="d-flex justify-content-around align-items-center">
+    <div data-scroll data-scroll-sticky data-scroll-target="#targetVisuPosition">
+        <h1 class="titrePositionFixe"><strong>position fixe</strong></h1>
     </div>
-    <div>
+    <div id="targetVisuPosition">
         <div class="d-flex justify-content-center align-items-center carte"><span>test1</span></div>
         <div class="d-flex justify-content-center align-items-center carte"><span>test2</span></div>
         <div class="d-flex justify-content-center align-items-center carte"><span>test3</span></div>
@@ -79,19 +81,8 @@
 
 
 
-
-
-
-
-
-
-
-<section data-scroll-section class="d-flex justify-content-around align-items-center ">
-    <h1 class="text-primary fs-1"><strong>TEST</strong></h1>
-</section>
-
-<section data-scroll-section class="d-flex justify-content-around align-items-center">
-    <h1 class="text-success fs-1"><strong>TEST</strong></h1>
+<section data-scroll-section class="d-flex justify-content-center align-items-center">
+    <span><strong>footer</strong></span>
 </section>
 
 

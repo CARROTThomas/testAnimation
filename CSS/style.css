@@ -53,10 +53,11 @@ header
     color: transparent;
 }
 
-.containerDecoDestinationsLeft {
+.containerDecoDestinations {
     display: flex;
     overflow: hidden;
     width: 100%;
+    background-color: #4f4e4e;
 }
 
 .txt {
@@ -67,7 +68,7 @@ header
 
 section {
     height: 100vh;
-    background-color: white;
+    background-color: grey;
 }
 
 .titreSection {
@@ -75,16 +76,7 @@ section {
     font-size: 8em;
 }
 
-.imgDeco {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    border: 30px solid pink;
-    background-color: #0B111E;
-}
-
-span
-{
+span {
     font-size: 3em;
 }
 
@@ -95,14 +87,12 @@ span
     margin: 5em;
 }
 
-#test {
-    background-color: white;
+.titrePositionFixe {
+    position: absolute;
+    top: -350px;
 }
 
-.sectionFixe {
-    height: auto;
-    border: 1px solid black;
-}
+
 
 @keyframes scrollTxtLeft {
     0% {
