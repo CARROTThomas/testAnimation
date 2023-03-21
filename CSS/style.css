@@ -90,6 +90,12 @@ span {
     font-size: 3em;
 }
 
+.titreSectionDeplacement {
+    color: white;
+    font-size: 1.3em;
+    font-family: 'Holtwood One SC', serif;
+}
+
 .subs {
     background-color: grey;
 }
