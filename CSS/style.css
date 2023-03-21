@@ -101,6 +101,10 @@ span {
     margin: 5em;
 }
 
+#gallery, #gallery2 {
+    background-color: #4f4e4e;
+}
+
 .titrePositionFixe {
     position: absolute;
     top: -350px;
